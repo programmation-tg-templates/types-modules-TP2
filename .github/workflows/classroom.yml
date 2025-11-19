@@ -16,10 +16,7 @@ jobs:
         id: tests
         uses: heh-dst/autograding-jest-grader@v1
         with:
-          test-name: Unit tests
           setup-command: npm ci
-          command: npm test -- --ci
-          timeout: 1
       - name: Autograding Reporter
         uses: classroom-resources/autograding-grading-reporter@v1
         env:
